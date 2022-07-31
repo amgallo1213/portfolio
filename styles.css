@@ -1,0 +1,39 @@
+body    {
+    background-color: #242423;
+    box-sizing: border-box;
+}
+
+#navbar {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #F5CB5C;
+    position: absolute;
+    top: 0;
+}
+
+.nav-link   {
+    margin: 15px;
+    text-decoration: none;
+    color:#333533
+}
+.nav-link:hover {
+    color: #E5383B;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #F5CB5C;
+    margin-top: 275px;
+    font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        color: #2E5BC7;
+    }
+}
