@@ -3,12 +3,12 @@ body    {
 }
 
 #navbar {
-    height: 45px;
+    height: 65px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: #F5CB5C;
+    background-color: #1F7A8C;
     position: fixed;
     top: 0;
 }
@@ -16,14 +16,14 @@ body    {
 .nav-link   {
     margin: 15px;
     text-decoration: none;
-    color:#333533
+    color: #C5C3C6;
 }
 .nav-link:hover {
-    color: #E5383B;
+    color: #C5C3C6;
 }
 
 #welcome-section    {
-    background-color: #242423;
+    background-color: #022B3A;
     width: auto;
     height: 800px;
     margin: 0;
@@ -35,37 +35,70 @@ body    {
 h1 {
     font-family: 'Inter', sans-serif;
     font-size: 3rem;
-    color: #E5383B;
+    color: #E1E5F2;
     font-weight: 500;
     margin-top: 400px;
     margin-bottom: 5px;
 }
 
 #about  {
-    color:#F5CB5C;
+    color:#C5C3C6;
     font-size: 1.8rem;
     margin: -5px;
 }
 
 #projects   {
-    background-color: #C5C3C6;
-    color: #E5383B;
-    margin-top: 0;
+    background-color: #E1E5F2;
+    margin-top: 0px;
 }
 
 h2  {
-    color: #E5383B;
+    color: #022B3A;
     text-decoration: underline;
     text-align: center;
     font-size: 2.3rem;
     margin: 0;
 }
 
+.tile-row   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
 .project-tile   {
     height: 300px;
     width: 300px;
     border: 1px solid black;
+    margin: 10px;
+    border-radius: 5%;
 }
+.project-tile:hover{
+    height: 450px;
+    width: 450px;
+}
+
+.project-title  {
+    color: #022B3A;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-left: 65px;
+    padding-top: 20px;
+}
+
+#connect    {
+    background-color: #022B3A;
+    height: 400px;
+    width: 100%;
+}
+
+footer  {
+    background-color: #1F7A8C;
+    height: 70px;
+    width: 100%;
+}
+
 @media (max-width: 1000px) {
     h1 {
         color: #2E5BC7;
