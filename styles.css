@@ -17,9 +17,12 @@ body    {
     margin: 15px;
     text-decoration: none;
     color: #C5C3C6;
+    font-size: 1.4rem;
+    height: 55px;
 }
 .nav-link:hover {
-    color: #C5C3C6;
+    color: #1F7A8C;
+    background-color: #C5C3C6;
 }
 
 #welcome-section    {
