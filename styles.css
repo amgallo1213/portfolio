@@ -8,7 +8,7 @@ body    {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: #1F7A8C;
+    background-color: #D90429;
     position: fixed;
     top: 0;
 }
@@ -16,17 +16,17 @@ body    {
 .nav-link   {
     margin: 15px;
     text-decoration: none;
-    color: #C5C3C6;
+    color: #EDF2F4;
     font-size: 1.4rem;
     height: 55px;
 }
-.nav-link:hover {
+/* .nav-link:hover {
     color: #1F7A8C;
     background-color: #C5C3C6;
-}
+} */
 
 #welcome-section    {
-    background-color: #022B3A;
+    background-color: #2B2D42;
     width: auto;
     height: 800px;
     margin: 0;
@@ -38,8 +38,8 @@ body    {
 h1 {
     font-family: 'Inter', sans-serif;
     font-size: 3rem;
-    color: #E1E5F2;
-    font-weight: 500;
+    color: #D90429;
+    font-weight: 400;
     margin-top: 400px;
     margin-bottom: 5px;
 }
@@ -51,16 +51,19 @@ h1 {
 }
 
 #projects   {
-    background-color: #E1E5F2;
+    background-color: #8D99AE;
     margin-top: 0px;
 }
 
 h2  {
-    color: #022B3A;
-    text-decoration: underline;
+    font-family: 'Inter', sans-serif;
+    color: #EDF2F4;
+    font-weight: 400;
     text-align: center;
     font-size: 2.3rem;
     margin: 0;
+    margin-bottom: 30px;
+    padding-top: 20px;
 }
 
 .tile-row   {
@@ -73,37 +76,43 @@ h2  {
 .project-tile   {
     height: 300px;
     width: 300px;
-    border: 1px solid black;
+    border: 2px solid black;
     margin: 10px;
     border-radius: 5%;
 }
 .project-tile:hover{
     height: 450px;
     width: 450px;
+
 }
 
 .project-title  {
-    color: #022B3A;
+    color: #EDF2F4;
     text-decoration: none;
     font-size: 1.5rem;
     padding-left: 65px;
     padding-top: 20px;
 }
 
+.project-title:hover   {
+    margin: 25px;
+    font-size: 1.6rem;
+}
+
 #connect    {
-    background-color: #022B3A;
+    background-color: #2B2D42;
     height: 400px;
     width: 100%;
 }
 
 footer  {
-    background-color: #1F7A8C;
+    background-color: #D90429;
     height: 70px;
     width: 100%;
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
     h1 {
         color: #2E5BC7;
     }
-}
+} */
