@@ -93,6 +93,7 @@ h1 {
 #project-label {
     margin-top: 0;
     padding-top: 40px;
+    padding-bottom: 20px;
     font-family: 'Inter', sans-serif;
     color: #EDF2F4;
     font-weight: 500;
@@ -202,7 +203,6 @@ h3,
 }
 
 #resume {
-    /* color: #D90429; */
     background-image: linear-gradient(to right,
             #EDF2F4,
             #EDF2F4 50%,
@@ -342,70 +342,6 @@ h3,
     width: 100%;
 }
 
-
-
-
-
-/* 
-
-
-
-#about {
-    color: #C5C3C6;
-    font-size: 1.8rem;
-    margin: -5px;
-}
-
-#soft-skills {
-    width: 650px;
-    text-align: center;
-    padding: 10px;
-}
-
-.tech-skills    {
-    color: #C5C3C6;
-    font-family: 'Padauk', sans-serif;
-}
-.soft-skills {
-    color: #C5C3C6;
-    margin-top: -10px;
-    margin-bottom: 10px;
-    font-family: 'Padauk', sans-serif;
-}
-
-#projects {
-    background-color: #8D99AE;
-    margin-top: 0px;
-}
-
-h2 {
-    font-family: 'Inter', sans-serif;
-    color: #EDF2F4;
-    font-weight: 400;
-    text-align: center;
-    font-size: 2.3rem;
-    margin: 0;
-    margin-bottom: 30px;
-    padding-top: 20px;
-}
-
-#soft-skills {
-    height: 400px;
-    width: 100%;
-    background-color: #2B2D42;
-}
-
-h3 {
-    margin-top: 0;
-    color: #EF233C;
-    font-family: 'Inter', sans-serif;
-}
-
-footer {
-    background-color: #D90429;
-    height: 70px;
-    width: 100%;
-} */
 
 /* @media (max-width: 1000px) {
     h1 {
