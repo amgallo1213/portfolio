@@ -99,7 +99,7 @@ h1 {
     font-weight: 500;
     text-align: center;
     font-size: 2.3rem;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .item {
@@ -140,23 +140,55 @@ h3,
     color: #EDF2F4;
 }
 
-#soft-skills {
+#resume {
     background-color: #EDF2F4;
     height: 250px;
 }
 
-#skills-label {
+#resume-label {
     margin-top: 0;
-    padding-top: 40px;
+    margin-left: 550px;
     font-family: 'Inter', sans-serif;
     color: #D90429;
     font-weight: 600;
     text-align: center;
     font-size: 2.3rem;
     text-decoration: underline;
+    background-image: linear-gradient(to right,
+            #2B2D42,
+            #2B2D42 50%,
+            #d90429 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 40px 0 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
 }
 
-#soft-skills-list {
+#resume-label:before {
+    content: '';
+    background: #2B2D42;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+#resume-label:hover {
+    background-position: 0;
+}
+
+#resume-label:hover::before {
+    width: 100%;
+}
+
+#resume-list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -187,10 +219,10 @@ h3,
     font-weight: 400;
     text-align: center;
     font-size: 2.3rem;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
-#resume,
+#linkedin,
 #phonenumber,
 #email,
 #github-link {
@@ -202,7 +234,7 @@ h3,
     text-decoration: none;
 }
 
-#resume {
+#linkedin {
     background-image: linear-gradient(to right,
             #EDF2F4,
             #EDF2F4 50%,
@@ -217,7 +249,7 @@ h3,
     transition: all 0.3s ease-in-out;
 }
 
-#resume:before {
+#linkedin:before {
     content: '';
     background: #EDF2F4;
     display: block;
@@ -229,11 +261,11 @@ h3,
     transition: all 0.3s ease-in-out;
 }
 
-#resume:hover {
+#linkedin:hover {
     background-position: 0;
 }
 
-#resume:hover::before {
+#linkedin:hover::before {
     width: 100%;
 }
 
