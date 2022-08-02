@@ -1,5 +1,9 @@
-body    {
+/* body {
     box-sizing: border-box;
+} */
+
+a   {
+    text-decoration: none;
 }
 
 #navbar {
@@ -13,23 +17,49 @@ body    {
     top: 0;
 }
 
-.nav-link   {
+.nav-link {
     margin: 15px;
-    text-decoration: none;
-    color: #EDF2F4;
     font-size: 1.4rem;
-    height: 55px;
+    background-image: linear-gradient(to right,
+            #EDF2F4,
+            #EDF2F4 50%,
+            #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
 }
-/* .nav-link:hover {
-    color: #1F7A8C;
-    background-color: #C5C3C6;
-} */
 
-#welcome-section    {
+.nav-link:before {
+    content: '';
+    background: #EDF2F4;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    background-position: 0;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+
+#welcome-section {
     background-color: #2B2D42;
     width: auto;
-    height: 800px;
-    margin: 0;
+    height: 750px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,22 +70,39 @@ h1 {
     font-size: 3rem;
     color: #D90429;
     font-weight: 400;
-    margin-top: 400px;
+    margin-top: 300px;
     margin-bottom: 5px;
 }
 
-#about  {
-    color:#C5C3C6;
+#about {
+    color: #C5C3C6;
     font-size: 1.8rem;
     margin: -5px;
 }
 
-#projects   {
+#soft-skills {
+    width: 650px;
+    text-align: center;
+    padding: 10px;
+}
+
+.tech-skills    {
+    color: #C5C3C6;
+    font-family: 'Padauk', sans-serif;
+}
+.soft-skills {
+    color: #C5C3C6;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-family: 'Padauk', sans-serif;
+}
+
+#projects {
     background-color: #8D99AE;
     margin-top: 0px;
 }
 
-h2  {
+h2 {
     font-family: 'Inter', sans-serif;
     color: #EDF2F4;
     font-weight: 400;
@@ -66,27 +113,97 @@ h2  {
     padding-top: 20px;
 }
 
-.tile-row   {
+.tile-row {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 10px;
 }
 
-.project-tile   {
+.project-tile {
     height: 300px;
-    width: 300px;
-    border: 2px solid black;
+    width: auto;
     margin: 10px;
     border-radius: 5%;
 }
-.project-tile:hover{
-    height: 450px;
-    width: 450px;
+
+.project-tile:hover {
+    height: 400px;
+    width: auto;
 
 }
 
-.project-title  {
+img {
+    height: 300px;
+    width: 400px;
+}
+
+
+.item {
+    width: calc(94%/3);
+    margin: 1%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.item img {
+    max-width: 100%;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.text5 {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#e5bk {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 80%;
+    height: 90%;
+    background: #000000;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.inside {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+}
+
+.e5:hover .text5 {
+    opacity: 1;
+    position: absolute;
+    top: 42%;
+    color: #EDF2F4;
+}
+
+.project-hover-link {
+    color: #EDF2F4;
+}
+
+.e5:hover #e5bk {
+    opacity: 0.6;
+}
+
+.e5:hover .line {
+    position: absolute;
+    top: 68%;
+    left: 30%;
+    width: 40%;
+    height: 1px;
+}
+
+.project-title {
     color: #EDF2F4;
     text-decoration: none;
     font-size: 1.5rem;
@@ -94,18 +211,19 @@ h2  {
     padding-top: 20px;
 }
 
-.project-title:hover   {
-    margin: 25px;
-    font-size: 1.6rem;
-}
-
-#connect    {
-    background-color: #2B2D42;
+#soft-skills {
     height: 400px;
     width: 100%;
+    background-color: #2B2D42;
 }
 
-footer  {
+h3 {
+    margin-top: 0;
+    color: #EF233C;
+    font-family: 'Inter', sans-serif;
+}
+
+footer {
     background-color: #D90429;
     height: 70px;
     width: 100%;
