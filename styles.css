@@ -145,9 +145,15 @@ h3,
     height: 250px;
 }
 
+/* #resume-div {
+    width: 50%;
+} */
+
 #resume-label {
+    width: 100%;
+    /* border: 2px solid hotpink; */
     margin-top: 0;
-    margin-left: 550px;
+    /* margin-left: 550px; */
     font-family: 'Inter', sans-serif;
     color: #D90429;
     font-weight: 600;
@@ -186,6 +192,7 @@ h3,
 
 #resume-label:hover::before {
     width: 100%;
+
 }
 
 #resume-list {
